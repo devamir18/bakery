@@ -67,7 +67,7 @@ export default function section2 ()  {
                   
                   <img 
                     src={index === 0 ? Vc : index === 1 ? Cho : Bred} 
-                    alt={item} 
+                    alt={item}  
                     className='w-full h-full rounded-full object-cover border-4 border-[#f1e7d8] transition-transform duration-500 group-hover:rotate-3'
                   />
                   
