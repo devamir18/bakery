@@ -1,9 +1,10 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
 import Odo from "../assets/images/odo.jpg"
 
 export default function Comment () {
-
+       
+    const [show ,setShow] = useState (false);
    const testimonials = [
         {
             id: 1,
@@ -23,8 +24,27 @@ export default function Comment () {
             image: Odo,
             position: 'end' 
         },
+         {
+    id: 3, 
+    quote: "Your new testimonial text here",
+    name: "John Doe",
+    image: Odo, 
+    daysAgo: 7,
+    position: 'start' 
+  },
+  {
+    id: 4,
+    quote: "Another great review!",
+    name: "Jane Smith", 
+    image: Odo,
+    daysAgo: 2,
+    position: 'end' 
+  }
      
     ];
+
+    const displayedTestimonials = show ? testimonials : testimonials.slice(-2);
+
     
    
     const BG_COCOA = '#855c33';
@@ -46,20 +66,18 @@ export default function Comment () {
                 </h2>
             </div>
             
-            {/* Testimonials Grid/Slider Area */}
             <div className='relative'>
                 
-                {/* Asymmetric Grid */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16'>
                     
-                    {testimonials.map((review) => (
+                    {displayedTestimonials.map((review) => (
                         <div 
                             key={review.id}
                             className={`flex justify-center ${review.position === 'end' ? 'md:mt-20' : ''}`}
                         >
                             <div className='w-full max-w-md bg-amber-750/10 rounded-3xl  shadow-2xl p-6 md:p-8 transform transition duration-300 hover:shadow-3xl relative'>
                                 
-                                {/* Large Quote Icon for Visual Impact */}
+                                
                                 <span 
                                     className='absolute top-0 left-4 text-6xl font-black opacity-10' 
                                     style={{ color: BG_COCOA }}
@@ -91,10 +109,14 @@ export default function Comment () {
                 </div>
                 
                 <div className='absolute top-1/2 -left-16 transform -translate-y-1/2 hidden lg:flex'>
-                    <button className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90`} style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}>
-                        <ArrowLeft className='w-6 h-6' />
-                    </button>
-                </div>
+           <button 
+            onClick={() => setShow(!show)}
+           style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}
+            className='w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90'
+            >
+                 <ArrowLeft className='w-6 h-6' />
+                </button>
+              </div>
                 <div className='absolute top-1/2 -right-16 transform -translate-y-1/2 hidden lg:flex'>
                     <button className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90`} style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}>
                         <ArrowRight className='w-6 h-6' />
