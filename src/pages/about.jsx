@@ -1,6 +1,12 @@
 import React from 'react'
 import Twq from "../assets/images/twq.jpg"
 import Odo from "../assets/images/odo.jpg"
+import Papa from "../assets/images/papa.jpg"
+import Paps from "../assets/images/paps.jpg"
+import Fry from "../assets/images/fry.jpg"
+import Amiy from "../assets/images/amiy.jpg"
+import Pap from "../assets/images/pap.jpg"
+import Blace from "../assets/images/blace.jpg"
 
 export default function about () {
   return (
@@ -55,7 +61,7 @@ export default function about () {
             <div className='h-auto bg-amber-900/30 rounded-lg p-6 hover:bg-amber-900/40 transition-colors'>
               <div className='w-full h-48 md:h-56 mb-4 overflow-hidden rounded-lg'>
                 <img 
-                  src={Odo} 
+                  src={Papa} 
                   alt="Manager" 
                   className='w-full h-full object-cover'
                 />
@@ -74,7 +80,7 @@ export default function about () {
             <div className='h-auto bg-amber-900/30 rounded-lg p-6 hover:bg-amber-900/40 transition-colors'>
               <div className='w-full h-48 md:h-56 mb-4 overflow-hidden rounded-lg'>
                 <img 
-                  src={Odo} 
+                  src={Pap} 
                   alt="Manager" 
                   className='w-full h-full object-cover object-center'
                 />
@@ -93,7 +99,7 @@ export default function about () {
             <div className='h-auto bg-amber-900/30 rounded-lg p-6 hover:bg-amber-900/40 transition-colors'>
               <div className='w-full h-48 md:h-56 mb-4 overflow-hidden rounded-lg'>
                 <img 
-                  src={Odo} 
+                  src={Paps} 
                   alt="Manager" 
                   className='w-full h-full object-cover'
                 />

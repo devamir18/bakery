@@ -1,6 +1,8 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import React, { useState } from 'react'
 import Odo from "../assets/images/odo.jpg"
+import Od from "../assets/images/od.jpg"
+
 
 export default function Comment () {
        
@@ -28,7 +30,7 @@ export default function Comment () {
     id: 3, 
     quote: "Every bite truly tastes like love! The pastries are always fresh, soft, and full of rich flavor. You can tell they’re made with care and passion. From the first bite to the last crumb, everything feels homemade and special — this is without a doubt my favorite bakery in town",
     name: "charles",
-    image: Odo, 
+    image: Od, 
     daysAgo: 7,
     position: 'start' 
   },
@@ -36,7 +38,7 @@ export default function Comment () {
     id: 4,
     quote: "can’t get enough of their treats! Every visit feels special — the smell alone makes you smile, and the taste keeps you coming back for more. Everything is beautifully presented, made with care, and you can truly feel the love in every bite. This bakery has become my happy place",
     name: "Ephraim", 
-    image: Odo,
+    image: Od,
     daysAgo: 2,
     position: 'end' 
   }
@@ -72,7 +74,7 @@ export default function Comment () {
             
             <div className='relative'>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16  justify-center items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-1 gap-x-10 gap-y-16  justify-center items-center'>
                     
                     {displayedTestimonials.map((review) => (
                         <div 
@@ -98,7 +100,7 @@ export default function Comment () {
                                     <img 
                                         src={review.image}
                                         alt={`User ${review.name}`} 
-                                        className='w-14 h-14 rounded-full object-cover border-2 border-amber-400'
+                                        className='w-14 h-14 rounded-full object-cover border-2'
                                     />
                                     <div>
                                         <h3 className='font-bold text-lg text-gray-800'>{review.name}</h3>

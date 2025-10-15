@@ -55,11 +55,11 @@ useEffect(() => {
                  <Contact className='size-6 mt-4 mx-4'/>
             </div>
             <ul className='-ml-2 py-10 space-y-4 text-[#f1e7d8] font-semibold block hover:text-amber-400 cursor-pointer'>
-            <li >Home</li>
-            <li>Menu</li>
-            <li>About Us</li>
-            <li>Gallery</li>
-            <li>Contact</li>
+           <Link to="/" className='block hover:text-gray-300'>Home</Link>
+            <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
+            <Link to="/About" className='block hover:text-gray-300'>About Us</Link>
+            <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
+            <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
             </ul>
         </div>
         {/* order button */}

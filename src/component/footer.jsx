@@ -1,15 +1,20 @@
 import { Facebook, Instagram, Twitch, Locate, Phone, Clock, Mail } from 'lucide-react'
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import Bred from "../assets/images/bred.jpg"
 export default function Footer () {
   return (
     <>
-     <div className='w-full h-auto md:h-125 bg-[#855c33]'>
+     <div className='w-full h-auto md:h-130 bg-[#855c33]'>
         <div className='grid grid-cols-1 md:grid-cols-3 px-2'>
             <div className=''>
                 <h1 className='mt-20 text-5xl font-serif font-semibold px-20 tight-leading text-[#f1e7d8]'>Heritage <br />Bakery</h1>
                 <span className='text-xl text-[#f1e7d8] px-20 py-5 font-serif'>Where taste meets elegant</span>
-                 <div className='mx-20 space-x-4 mt-30 flex'>
+                <div className='w-70 h-40 m-auto rounded-3xl'>
+                    <img src={Bred} alt="" className='w-full rounded-3xl h-40 object-cover'/>
+
+                </div>
+                 <div className='mx-20 space-x-4 mt-6 flex'>
                     <span className='text-xl font-bold text-[#f1e7d8] '>Visit us:</span>
                     <Facebook className=''/>
                     <Instagram/>
@@ -21,14 +26,21 @@ export default function Footer () {
             {/* grid 2 */}
             <div className='h-100'>
              <span className='text-2xl font-semibold flex justify-start font-serif mt-24 px-14 items-center text-[#f1e7d8] '>Heritage </span>
-                <div className='flex justify-start items-center px-14 -mt-12'>
-                     <ul className='mt-14 space-y-4 font-semibold text-[#f1e7d8] font-srif'>
-                    <li>Home</li>
-                    <li>Our Menu</li>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+                <div className='flex justify-between items-center px-14 -mt-12'>
+                     <ul className='mt-14 space-y-4  font-semibold text-[#f1e7d8] font-srif'>
+                     <Link to="/" className='block hover:text-gray-300'>Home</Link>
+                                 <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
+                                 <Link to="/About" className='block hover:text-gray-300'>About Us</Link>
+                                 <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
+                                 <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
                 </ul>
+                <ul className='mt-13 space-y-4 font-semibold text-[#f1e7d8] font-srif '>
+                  <li>Order Tracking</li>
+                  <li>Delivery Information</li>
+              <li>Returns & Refunds</li>
+                <li>Contact Support</li>
+               <li>Shipping Policy</li>
+              </ul>
                 </div>
             </div>
             {/* 3 grid */}
@@ -63,7 +75,7 @@ export default function Footer () {
             </div>
         </div>
            <div>
-            <hr className='w-full text-[#f1e7d8]'/>
+            <hr className='w-full text-[#f1e7d8] mt-3'/>
             <div className='flex justify-between'>
                 <p className='py-8 text-[#f1e7d8] px-12'>2025 Heritage Bakery.All right reserved</p>
                 <span className='py-8 text-[#f1e7d8] px-12'>Privacy|Policy|Terms $Condition|Accesibility</span>
