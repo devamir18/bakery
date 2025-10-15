@@ -77,7 +77,7 @@ export default function Comment () {
                     {displayedTestimonials.map((review) => (
                         <div 
                             key={review.id}
-                            className={`flex justify-center ${review.position === 'end' ? 'md:mt-20' : ''}`}
+                            className={`flex justify-center ${review.position === 'center' ? 'md:mt-20' : ''}`}
                         >
                             <div className='w-full max-w-md bg-amber-750/10 rounded-3xl   shadow-2xl p-6 md:p-8 transform transition duration-300 hover:shadow-3xl relative'>
                                 
