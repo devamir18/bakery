@@ -26,16 +26,16 @@ export default function Comment () {
         },
          {
     id: 3, 
-    quote: "Your new testimonial text here",
-    name: "John Doe",
+    quote: "Every bite truly tastes like love! The pastries are always fresh, soft, and full of rich flavor. You can tell they’re made with care and passion. From the first bite to the last crumb, everything feels homemade and special — this is without a doubt my favorite bakery in town",
+    name: "charles",
     image: Odo, 
     daysAgo: 7,
     position: 'start' 
   },
   {
     id: 4,
-    quote: "Another great review!",
-    name: "Jane Smith", 
+    quote: "can’t get enough of their treats! Every visit feels special — the smell alone makes you smile, and the taste keeps you coming back for more. Everything is beautifully presented, made with care, and you can truly feel the love in every bite. This bakery has become my happy place",
+    name: "Ephraim", 
     image: Odo,
     daysAgo: 2,
     position: 'end' 
@@ -43,7 +43,7 @@ export default function Comment () {
      
     ];
 
-    const displayedTestimonials = show ? testimonials : testimonials.slice(-2);
+    const displayedTestimonials = show ? testimonials.slice(-1) : testimonials.slice(0,1);
      console.log('Show state:', show);
     console.log('Total testimonials:', testimonials.length);
     console.log('Displayed testimonials:', displayedTestimonials.length);
@@ -61,7 +61,6 @@ export default function Comment () {
    <div className='py-20 md:py-32 overflow-hidden' style={{ backgroundColor: BG_COCOA }}>
         <div className='max-w-7xl mx-auto px-6 md:px-12'>
 
-            {/* Header Section: Bold and Centered */}
             <div className='text-center mb-16 md:mb-24'>
                 <p className={`text-lg font-serif mb-4`} style={{ color: ACCENT_CREAM }}>
                     Real voice. Honest praise.
@@ -73,14 +72,14 @@ export default function Comment () {
             
             <div className='relative'>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16  justify-center items-center'>
                     
                     {displayedTestimonials.map((review) => (
                         <div 
                             key={review.id}
                             className={`flex justify-center ${review.position === 'end' ? 'md:mt-20' : ''}`}
                         >
-                            <div className='w-full max-w-md bg-amber-750/10 rounded-3xl  shadow-2xl p-6 md:p-8 transform transition duration-300 hover:shadow-3xl relative'>
+                            <div className='w-full max-w-md bg-amber-750/10 rounded-3xl   shadow-2xl p-6 md:p-8 transform transition duration-300 hover:shadow-3xl relative'>
                                 
                                 
                                 <span 
@@ -123,19 +122,32 @@ export default function Comment () {
                 </button>
               </div>
                 <div className='absolute top-1/2 -right-16 transform -translate-y-1/2 hidden lg:flex'>
-                    <button className={`w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90`} style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}>
-                        <ArrowRight className='w-6 h-6' />
-                    </button>
+                   <button 
+            onClick={() => setShow(!show)}
+           style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}
+            className='w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90'
+            >
+                <ArrowRight className='w-6 h-6' />
+                </button>
                 </div>
+                 
             </div>
             
            
             <div className='flex justify-center gap-6 mt-12 md:hidden'>
-                 <button className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90`} style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}>
-                    <ArrowLeft className='w-5 h-5' />
+                  <button 
+            onClick={() => setShow(!show)}
+           style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}
+            className='w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90'
+            >
+                 <ArrowLeft className='w-6 h-6' />
                 </button>
-                <button className={`w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90`} style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}>
-                    <ArrowRight className='w-5 h-5' />
+               <button 
+            onClick={() => setShow(!show)}
+           style={{ backgroundColor: ACCENT_CREAM, color: BG_COCOA }}
+            className='w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition hover:bg-opacity-90'
+            >
+                <ArrowRight className='w-6 h-6' />
                 </button>
             </div>
 
