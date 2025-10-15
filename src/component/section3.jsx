@@ -36,14 +36,25 @@ export default function Section3 () {
                </div>
             </div>
                     {/* grid 2 */}
-                  <div className=''>
-                    <div className='w-100 h-100 float-right'>
-                         <img src={Zzq} alt="" className='w-100 h-90 object-cover object-center  mt-30 rounded'/>
-                    </div>
-                     <div className='w-50 h-50 '>
-                         <img src={Zzz} alt="" className='w-50 h-50 object-cover object-center mt-20 ml-30 rounded'/>
-                    </div>
-                  </div>
+               <div className='flex flex-col md:flex-row gap-4 md:gap-6 p-4'>
+  {/* First Image - Full width on mobile, 60% on desktop */}
+  <div className='w-full md:w-3/5'>
+    <img 
+      src={Zzq} 
+      alt="" 
+      className='w-full h-64 md:h-96 object-cover object-center rounded shadow-lg'
+    />
+  </div>
+  
+  {/* Second Image - Full width on mobile, 40% on desktop */}
+  <div className='w-full md:w-2/5'>
+    <img 
+      src={Zzz} 
+      alt="" 
+      className='w-full h-48 md:h-96 object-cover object-center rounded shadow-lg'
+    />
+  </div>
+</div>
 
         </div>
                     <div className='bg-[#855c33]'>
