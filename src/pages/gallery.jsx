@@ -1,20 +1,91 @@
 import React from 'react';
-
+import Bred from "../assets/images/bred.jpg"
+import Cho from "../assets/images/cho.jpg"
+import  Cake  from "../assets/images/cake.jpg"
+import Cake2 from  "../assets/images/cakes2.jpg"
+import Berr from "../assets/images/berr.jpg"
+import Ccake from "../assets/images/ccake.jpg"
+import Cake3 from "../assets/images/cakes3.jpg"
+import Mido from "../assets/images/mido.png"
+import Sam from "../assets/images/sam.jpg"
+import Sam2 from "../assets/images/sam2.jpg"
+import Samp from "../assets/images/samp.jpg"
 // Define the component and the data inside it, as provided.
 export default function Gallery() {
     const galleryItems = [
-        { id: 1, imageSrc: '', title: 'Artisan Bread', description: 'Hand-crafted daily' },
-        { id: 2, imageSrc: 'https://via.placeholder.com/400x300/AAAAAA/FFFFFF?text=Item+2', title: 'Chocolate Croissant', description: 'Flaky & rich' },
-        { id: 3, imageSrc: 'https://via.placeholder.com/500x700/BBBBBB/FFFFFF?text=Item+3', title: 'Espresso Delight', description: 'Perfect coffee' },
-        { id: 4, imageSrc: 'https://via.placeholder.com/300x500/DDDDDD/FFFFFF?text=Item+4', title: 'Seasonal Tart', description: 'Fresh fruit' },
-        { id: 5, imageSrc: 'https://via.placeholder.com/700x400/EEEEEE/FFFFFF?text=Item+5', title: 'Vanilla Bean Cake', description: 'Layered perfection' },
-        { id: 6, imageSrc: 'https://via.placeholder.com/400x600/FFDDDD/FFFFFF?text=Item+6', title: 'Breakfast Scones', description: 'Warm & fluffy' },
-        { id: 7, imageSrc: 'https://via.placeholder.com/600x350/CCAAAA/FFFFFF?text=Item+7', title: 'Macarons', description: 'Colorful assortment' },
-        { id: 8, imageSrc: 'https://via.placeholder.com/350x500/AACCFF/FFFFFF?text=Item+8', title: 'Glazed Donuts', description: 'Sweet treats' },
-        { id: 9, imageSrc: 'https://via.placeholder.com/500x500/FFEECC/FFFFFF?text=Item+9', title: 'Cheesecake', description: 'Creamy classic' },
-        { id: 10, imageSrc: 'https://via.placeholder.com/400x400/CCFFCC/FFFFFF?text=Item+10', title: 'Lemon Bars', description: 'Tangy delight' },
-        { id: 11, imageSrc: 'https://via.placeholder.com/700x300/FFFFCC/FFFFFF?text=Item+11', title: 'Cupcakes', description: 'Frosted fun' },
-        { id: 12, imageSrc: 'https://via.placeholder.com/500x600/FFCCEE/FFFFFF?text=Item+12', title: 'Pistachio Muffin', description: 'Nutty goodness' },
+         {
+            id: 1,
+            imageSrc: Bred, // or "path/to/image.jpg"
+            title: "Croissants",
+            description: "Buttery, flaky perfection"
+        },
+        {
+            id: 2,
+            imageSrc: Ccake,
+            title: "Chocolate Éclair",
+            description: "Rich chocolate heaven"
+        },
+        {
+            id: 3,
+            imageSrc: Cake3,
+            title: "Artisan Sourdough",
+            description: "Freshly baked daily"
+        },
+        {
+            id: 4,
+            imageSrc: Berr,
+            title: "French Macarons",
+            description: "Delicate and colorful"
+        },
+        {
+            id: 5,
+            imageSrc:Samp,
+            title: "Red Velvet Cake",
+            description: "Moist and decadent"
+        },
+        {
+            id: 6,
+            imageSrc: Sam,
+            title: "Cinnamon Rolls",
+            description: "Warm and gooey"
+        },
+        {
+            id: 7,
+            imageSrc: Sam2,
+            title: "Fruit Tarts",
+            description: "Fresh seasonal fruits"
+        },
+        {
+            id: 8,
+            imageSrc: Mido,
+            title: "Tiramisu",
+            description: "Italian classic"
+        },
+        {
+            id: 9,
+            imageSrc: Bred,
+            title: "Baguette",
+            description: "Crispy crust, soft inside"
+        },
+        {
+            id: 10,
+            imageSrc:Cho ,
+            title: "Cheesecake",
+            description: "Creamy perfection"
+        },
+        {
+            id: 11,
+            imageSrc:Cake2,
+            title: "Danish Pastries",
+            description: "Sweet and flaky"
+        },
+        {
+            id: 12,
+            imageSrc:Cake ,
+            title: "Brownies",
+            description: "Fudgy chocolate bliss"
+        }
+       
     ];
 
     // --- Color Variables ---
