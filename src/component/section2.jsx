@@ -1,5 +1,5 @@
 import React from 'react'
-import Vc from "../assets/images/Vc.jpg"
+import Vc from "../assets/images/vc.jpg"
 import Bred from  "../assets/images/bred.jpg"
 import Mid from "../assets/images/mid.jpg"
 import Mido from "../assets/images/mido.png"
