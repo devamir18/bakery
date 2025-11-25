@@ -27,13 +27,13 @@ export default function Footer () {
             <div className='h-100'>
              <span className='text-2xl font-semibold flex justify-start font-serif mt-24 px-14 items-center text-[#f1e7d8] '>Heritage </span>
                 <div className='flex justify-between items-center px-14 -mt-12'>
-                     <ul className='mt-14 space-y-4  font-semibold text-[#f1e7d8] font-srif'>
-                     <Link to="/" className='block hover:text-gray-300'>Home</Link>
-                                 <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
-                                 <Link to="/About" className='block hover:text-gray-300'>About Us</Link>
-                                 <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
-                                 <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
-                </ul>
+                 <ul className='mt-14 space-y-4  font-semibold text-[#f1e7d8] font-srif'>
+                 <Link to="/" className='block hover:text-gray-300'>Home</Link>
+                           <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
+                           <Link to="/about" className='block hover:text-gray-300'>About Us</Link>
+                           <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
+                           <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
+             </ul>
                 <ul className='mt-13 space-y-4 font-semibold text-[#f1e7d8] font-srif '>
                   <li>Order Tracking</li>
                   <li>Delivery Information</li>

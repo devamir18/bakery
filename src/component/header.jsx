@@ -55,16 +55,16 @@ useEffect(() => {
                  <Contact className='size-6 mt-4 mx-4'/>
             </div>
             <ul className='-ml-2 py-10 space-y-4 text-[#f1e7d8] font-semibold block hover:text-amber-400 cursor-pointer'>
-           <Link to="/" className='block hover:text-gray-300'>Home</Link>
-            <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
-            <Link to="/About" className='block hover:text-gray-300'>About Us</Link>
-            <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
-            <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
+             <Link to="/" className='block hover:text-gray-300'>Home</Link>
+              <Link to="/menu" className='block hover:text-gray-300'>Menu</Link>
+              <Link to="/about" className='block hover:text-gray-300'>About Us</Link>
+              <Link to="/gallery" className='block hover:text-gray-300'>Gallery</Link>
+              <Link to="/contact" className='block hover:text-gray-300'>Contact</Link>
             </ul>
         </div>
         {/* order button */}
         <div className='-mt-4 m-4 float-right'>
-            <button className='w-25 h-10  rounded-full bg-amber-800  font-bold text-white hover:scale-105'>Order</button>
+            <Link to="/order" className='w-25 h-10 inline-block text-center rounded-full bg-amber-800  font-bold text-white hover:scale-105 py-2'>Order</Link>
 
         </div>
          

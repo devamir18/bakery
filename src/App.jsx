@@ -1,5 +1,6 @@
 import Header from "./component/header";
 import Home from "./pages/home";
+import { Link } from "react-router-dom";
 import Section2 from "./component/section2";
 import Section3 from "./component/section3";
 import Section4 from "./component/section4";
@@ -10,7 +11,6 @@ import Menu from "./pages/menu";
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
-import Dashboard from "./pages/dashboard";
 import Order from "./pages/order"
 import Auth from "./pages/auth"
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
