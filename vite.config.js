@@ -4,9 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
-// Get the equivalent of __dirname in ES module scope
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const __dirname = path.dirname(__filename) 
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
